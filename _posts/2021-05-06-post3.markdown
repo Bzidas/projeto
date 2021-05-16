@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "case 2"
+title:  "case 3"
 date:   2021-05-06 18:06:35 +0100
 categories: ux design
+permalink: /case3/
 ---
 post 3
