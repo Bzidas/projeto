@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "case 2"
 date:   2021-05-06 20:06:35 +0100
-categories: jekyll update
+categories: ux design
 ---
 post 3
