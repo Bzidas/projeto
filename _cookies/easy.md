@@ -1,0 +1,13 @@
+---
+title: Easy 3.0
+skills: ux designer | facilitator | lead designer
+image_path: /projeto/assets/img/case_easy.jpg
+---
+
+<p>Easy is a finance app from CGD for young adults (18-25) to deal with daily banking easily.
+
+Since January, I organized a task force to redefine a new strategic approach for this digital product to turn it into something more appealing.</p>
+
+<h4>{{ page.skills}}</h4>
+
+<a href="#">See more</a>

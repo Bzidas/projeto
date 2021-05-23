@@ -2,7 +2,7 @@
 layout: post
 title:  "case 2"
 date:   2021-05-06 19:06:35 +0100
-categories: ux design
+skills: ux designer | product designer
 permalink: /case2/
 ---
-post 2
+<h1>{{ page.skills}}</h1>

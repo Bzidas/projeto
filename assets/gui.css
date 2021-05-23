@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #354C58;
+  font-size: 1rem;
+}
+
+
+h1,
+h2,
+h3,
+address,
+a {
+  font-family: Helvetica, Arial, "sans-serif";
+  font-style: normal;
+}
+
+.navigation {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  background: #FFFFFF;
+  border-bottom: solid 2px #F2F4F8;
+}
+
+.navigation a { 
+  text-align: center; 
+  padding: 15px;
+  color: #354C58;
+  display: block;
+  text-decoration: none;
+  border-bottom: 5px solid white;
+  
+}
+
+.navigation a:hover {
+  background-color: #0288FF;
+  color: #FFFFFF;
+  border-bottom: 5px solid #0288FF;
+}
+
+
+
+@media all and (min-width: 600px) {
+  .navigation a {
+    padding: 1em;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+  } 
+
+  .navigation a:hover {
+    background-color: #FFFFFF;
+    color: #354C58;
+    border-bottom: 5px solid #0288FF;
+  }
+}
+
+
+
+.more-about,
+.portfolio-gui
+{
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: #F2F4F8;
+  text-align: center;
+}
+
+
+.more-about h2 {
+  font-weight: 600;
+  font-size: 1.313rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.more-about ul {
+  list-style-type: none;
+  margin: 36px 0;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 0 20px;
+}
+
+
+.more-about li {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  font-size: 0.625rem;
+  padding: 8px 0px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.more-about li img {
+  display: block;
+  width: 25px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
