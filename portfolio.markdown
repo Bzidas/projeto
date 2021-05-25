@@ -1,27 +1,29 @@
 ---
 layout: page
-title: Cookies
+title: Portfolio
 permalink: /portfolio/
 ---
 
-<h2 style="font-weight: 600;
-  font-size: 1.313rem;
-  text-transform: uppercase;
-  text-align: left;">portfolio</h2>
 
-
-
-{% for cookie in site.cookies %}
-
-<section style="width:600px; margin:auto">
-
-<div class="cookie">
-<h2><img src="{{ cookie.image_path}}" alt="{{ cookie.title}}" />{{ cookie.title}} </h2>
-{{ cookie.content }}
+<div class="container">
+  <ul>
+  {% for portfolio in site.portfolio %}
+    <li>
+      <article>
+        <a href="#" class="topic">{{ page.skills}}</a>
+        <h3>{{ portfolio.title}}</h3>
+        <p>{{ portfolio.content }}</p>
+     </article>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 
-</section>
 
-{% endfor %}
+
+
+
+
+
 
 

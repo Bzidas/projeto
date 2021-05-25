@@ -1,0 +1,11 @@
+<nav>
+   <ul class="navigation">
+    {% for item in site.data.navegacao %}
+    <li>
+        <a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}style="border-bottom: 5px solid #0288FF;"{% endif %}>
+            {{ item.name }}
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+</nav>
