@@ -47,10 +47,10 @@ a {
   border-bottom: 5px solid #0288FF;
 }
 
-.presenttion-gui {
+.presentation-gui {
   justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     color: #0288FF;
     font-size: 4rem;
     display: flex;
@@ -85,21 +85,16 @@ a {
   }
 
 
-
 .container li {
   margin-bottom: 40px;
   width: 30%;
 }
 
-.presenttion-gui {
-    height: 80vh;
+.presentation-gui {
+    height: 70vh;
     font-size: 8rem;
 }
-
 }
-
-
-
 
 .contacto-content div
    {
@@ -107,7 +102,7 @@ a {
   }
 
 .more-about,
-.portfolio-gui
+.gui
 {
   display: block;
   width: 100%;
@@ -117,7 +112,7 @@ a {
   text-align: center;
 }
 
-.portfolio-gui
+.gui
 {
  text-align: left;
  background-color: #FFF;
@@ -125,13 +120,12 @@ a {
 
 
 .more-about h2,
-.portfolio-gui h2
+.gui h2
 {
   font-weight: 600;
   font-size: 1.313rem;
   text-transform: uppercase;
   text-align: left;
-  border: solid 1px red;
 }
 
 .more-about ul {
@@ -177,7 +171,11 @@ a {
 }
 
 
-
+.contacto-content a
+   {
+    display: inline-block;
+    padding-bottom: 50px;
+  }
 
 
 

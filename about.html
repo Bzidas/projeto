@@ -3,6 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
+<section class="contacto-content">
+  <div></div>
+    {% include history-about.html %}
+  </div>
+  <div>
 <ul class="post-list">
     {%- for post in site.posts -%}
     <li>
@@ -15,3 +20,5 @@ permalink: /about/
     </li>
     {%- endfor -%}
   </ul>
+</div>
+</section>

@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<h2>To read</h2>
+<h2>{{ page.topics }}</h2>
 
 <section class="contacto-content">
-
-   <h3>{{ page.title}}</h3>
-
-   {{ content }}
-
+<h3>{{ page.title}}</h3>
+{{ content }}
+<a href="{{ site.baseurl }}/">home</a> / <a href="{{ site.baseurl }}/about/">about</a>
 </section>
   

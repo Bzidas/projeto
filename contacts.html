@@ -3,11 +3,11 @@ layout: page
 title: Contacts
 permalink: /contacts/
 ---
-
 <section class="contacto-content">
-
+<div>
 {% for meio in site.data.listacontactos %}
-<div><h3>{{ meio.plataforma}}</h3> <a href="{{ meio.endereco }}">{{ meio.endereco }}</a></div>
+<h3>{{ meio.plataforma}}</h3>
+<a href="{{ meio.endereco }}">{{ meio.endereco }}</a>
 {% endfor %}
-
+</div>
 </section>
