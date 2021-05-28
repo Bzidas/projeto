@@ -13,7 +13,6 @@ body {
   font-size: 1rem;
 }
 
-
 h1,
 h2,
 h3,
@@ -49,27 +48,27 @@ a {
 
 .presentation-gui {
   justify-content: center;
-    align-items: center;
-    height: 70vh;
-    color: #0288FF;
-    font-size: 4rem;
-    display: flex;
-    width: 100%;
-    margin: auto;
-    font-weight: 600;
-    overflow: hidden;
+  align-items: center;
+  height: 70vh;
+  color: #0288FF;
+  font-size: 4rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-weight: 600;
+  overflow: hidden;
 }
 
 .page-name {
   justify-content: center;
-    align-items: center;
-    color: #0288FF;
-    font-size: 3rem;
-    display: flex;
-    width: 100%;
-    margin: auto;
-    font-weight: 400;
-    margin-bottom: 0px;
+  align-items: center;
+  color: #0288FF;
+  font-size: 3rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 
 @media all and (min-width: 600px) {
@@ -82,7 +81,6 @@ a {
     justify-content: space-around;
   } 
 
- 
   .navigation a:hover {
     background-color: #FFFFFF;
     color: #354C58;
@@ -90,36 +88,32 @@ a {
   }
 
   .portfolio-content,
-  .contacto-content
-  {
+  .contacto-content {
     width:600px;
     margin:auto;
   }
 
-
-.container li {
-  margin-bottom: 40px;
-  width: 30%;
-}
-
-.presentation-gui {
-    height: 70vh;
-    font-size: 8rem;
-}
-
-.page-name {
-  font-size: 6rem;
-}
-}
-
-.contacto-content div
-   {
-    margin:100px 0;
+  .container li {
+    margin-bottom: 40px;
+    width: 30%;
   }
 
+  .presentation-gui {
+    height: 70vh;
+    font-size: 8rem;
+  }
+
+  .page-name {
+    font-size: 6rem;
+  }
+}
+
+.contacto-content div {
+  margin:100px 0;
+}
+
 .more-about,
-.gui
-{
+.gui {
   display: block;
   width: 100%;
   margin: auto;
@@ -128,16 +122,13 @@ a {
   text-align: center;
 }
 
-.gui
-{
+.gui {
  text-align: left;
  background-color: #FFF;
 }
 
-
 .more-about h2,
-.gui h2
-{
+.gui h2 {
   font-weight: 600;
   font-size: 1.313rem;
   text-transform: uppercase;
@@ -151,7 +142,6 @@ a {
   margin: auto;
   padding: 0 0 20px;
 }
-
 
 .more-about li {
   display: inline-block;
@@ -171,8 +161,6 @@ a {
   margin-bottom: 4px;
 }
 
-
-
 .container ul {
   list-style-type: none;
   display: flex;
@@ -181,34 +169,30 @@ a {
   margin: 100px 0;
 }
 
-
 .container img {
   max-width: 100%;
   height: auto;
 }
 
-
-.contacto-content a
-   {
-    display: inline-block;
-    padding-bottom: 50px;
-  }
+.contacto-content a {
+  display: inline-block;
+  padding-bottom: 50px;
+}
 
 a.class-teste {
   border-bottom: 5px solid #0288FF;
 }
 
-.detalhe-content
-   {
-    max-width:600px;
-    margin:100px auto;
-    width: 100%;
-  }
+.detalhe-content {
+  max-width:600px;
+  margin:100px auto;
+  width: 100%;
+}
 
 .detalhe-content img {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
 
 .detalhe-content div {
   margin-bottom: 50px;
@@ -222,26 +206,33 @@ a.class-teste {
 
 .project-name {
   justify-content: center;
-    align-items: center;
-    color: #0288FF;
-    font-size: 6rem;
-    display: flex;
-    width: 100%;
-    margin: auto;
-    font-weight: 400;
-    margin-bottom: 0px;
+  align-items: center;
+  color: #0288FF;
+  font-size: 6rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 
-
-
 .box-color {
-  display: flex; justify-content: center;
-align-items: center; height:100px; justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100px;
+  justify-content: space-around;
 }
 
 .box-color span {
-  width: 100px; height: 100%; font-weight: bold; padding: 20px; display: flex; justify-content: center;
-align-items: center; border-radius: 15px;
+  width: 100px;
+  height: 100%;
+  font-weight: bold;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
 
 span.cor1 {
@@ -263,11 +254,16 @@ span.cor4 {
 }
 
 .box-skills {
-  display: flex; justify-content: center;
-align-items: center; height:100px; justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100px;
+  justify-content: space-around;
 }
 
 .box-skills span {
-  font-weight: bold; padding: 20px; display: flex; justify-content: center;
-align-items: center; border-radius: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

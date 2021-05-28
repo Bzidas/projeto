@@ -1,11 +1,12 @@
 <nav>
-   <ul class="navigation">
+	<ul class="navigation">
     {% for item in site.data.navegacao %}
-    <li>
-        <a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}class="class-teste"{% endif %}>
+    
+		<li>
+			<a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}class="class-teste"{% endif %}>
             {{ item.name }}
         </a>
-    </li>
+		</li>
     {% endfor %}
     </ul>
 </nav>
