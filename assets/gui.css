@@ -60,6 +60,18 @@ a {
     overflow: hidden;
 }
 
+.page-name {
+  justify-content: center;
+    align-items: center;
+    color: #0288FF;
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
 @media all and (min-width: 600px) {
   .navigation a {
     padding: 1em;
@@ -79,7 +91,7 @@ a {
 
   .portfolio-content,
   .contacto-content
-   {
+  {
     width:600px;
     margin:auto;
   }
@@ -93,6 +105,10 @@ a {
 .presentation-gui {
     height: 70vh;
     font-size: 8rem;
+}
+
+.page-name {
+  font-size: 6rem;
 }
 }
 
@@ -165,6 +181,7 @@ a {
   margin: 100px 0;
 }
 
+
 .container img {
   max-width: 100%;
   height: auto;
@@ -177,7 +194,80 @@ a {
     padding-bottom: 50px;
   }
 
+a.class-teste {
+  border-bottom: 5px solid #0288FF;
+}
+
+.detalhe-content
+   {
+    max-width:600px;
+    margin:100px auto;
+    width: 100%;
+  }
+
+.detalhe-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.detalhe-content div {
+  margin-bottom: 50px;
+}
+
+.detalhe-content div h3 {
+  color: #0288FF;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-name {
+  justify-content: center;
+    align-items: center;
+    color: #0288FF;
+    font-size: 6rem;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
 
 
 
+.box-color {
+  display: flex; justify-content: center;
+align-items: center; height:100px; justify-content: space-around;
+}
 
+.box-color span {
+  width: 100px; height: 100%; font-weight: bold; padding: 20px; display: flex; justify-content: center;
+align-items: center; border-radius: 15px;
+}
+
+span.cor1 {
+  background-color: #33C2B8;
+  color: #FFFFFF;
+}
+
+span.cor2 {
+  background-color: #364042;
+  color: #FFFFFF;
+}
+
+span.cor3 {
+  background-color: #F1FBFA;
+}
+
+span.cor4 {
+  background-color: #F3CF5D;
+}
+
+.box-skills {
+  display: flex; justify-content: center;
+align-items: center; height:100px; justify-content: space-around;
+}
+
+.box-skills span {
+  font-weight: bold; padding: 20px; display: flex; justify-content: center;
+align-items: center; border-radius: 15px;
+}

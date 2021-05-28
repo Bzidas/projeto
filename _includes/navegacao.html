@@ -2,7 +2,7 @@
    <ul class="navigation">
     {% for item in site.data.navegacao %}
     <li>
-        <a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}style="border-bottom: 5px solid #0288FF;"{% endif %}>
+        <a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}class="class-teste"{% endif %}>
             {{ item.name }}
         </a>
     </li>
