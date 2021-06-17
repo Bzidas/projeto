@@ -8,7 +8,6 @@
   margin: $space-zero;
   background: $neutral-color;
   border-bottom: solid 2px $secondary-color;
-
   a { 
     text-align: center; 
     padding: $space-small;
@@ -17,30 +16,27 @@
     text-decoration: none;
     border-bottom: $space-xsmall solid $neutral-color;
     background-color: $neutral-color;
-
     &:hover {
-    background-color: $primary-color;
-    color: $neutral-color;
-    border-bottom: $space-xsmall solid $primary-color;
-    text-decoration: none;
+      background-color: $primary-color;
+      color: $neutral-color;
+      border-bottom: $space-xsmall solid $primary-color;
+      text-decoration: none;
     }
   }
 }
 
-@media all and (min-width: 600px) {
+@media #{ $responsive-medium } {
   .navigation {
-  display: flex;
-  justify-content: space-around;
-  
+    display: flex;
+    justify-content: space-around;
     a {
       color: $primary-color;
-    
       &:hover {
         background-color: $neutral-color;
         color: $primary-color;
         border-bottom: $space-xsmall solid $primary-color;
       }
-     }
+    }
   }
 }
 

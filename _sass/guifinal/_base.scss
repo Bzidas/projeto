@@ -17,12 +17,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $font-weight $font-family;
+  font-family: $font-family;
   color: $text-color;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 
@@ -30,7 +31,7 @@ body {
  * `main` element
  */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block; 
 }
 
 
@@ -50,16 +51,13 @@ figure > img {
   display: block;
 }
 
-figcaption {
-  font-size: $small-font-size;
-}
-
 
 /**
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 0;
+  list-style-type: none;
 }
 
 li {
@@ -74,7 +72,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: 400;
 }
 
 
@@ -96,36 +94,38 @@ a {
  
 }
 
-.container ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 100px 0;
-}
+.container {
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px 0;
+  }
 
-.container img {
-  max-width: 100%;
-  height: auto;
-  padding: 24px 0;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+    padding: 24px 0;
+  }
 
-.container li {
-  margin-bottom: 40px;
-}
+  li {
+    margin-bottom: 40px;
+  }
 
-.container a {
-  display: inline-block;
-  padding: 12px;
-  background: $primary-color;
-  color: white;
-  text-decoration: none;
-}
+  a {
+    display: inline-block;
+    padding: 12px;
+    background: $primary-color;
+    color: white;
+    text-decoration: none;
+  }
 
-.container h3 {
-  color: $primary-color;
-  font-size: 90%;
-  padding: 24px 0;
+  h3 {
+    color: $primary-color;
+    font-size: 90%;
+    padding: 24px 0;
+  }
 }
 
 
@@ -139,9 +139,7 @@ a {
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
-}
-
-.box-skills span {
+  span {
   font-weight: bold;
   display: flex;
   padding: 12px;
@@ -150,6 +148,7 @@ a {
   justify-content: center;
   align-items: center;
   border: $primary-color solid 1px;
+  }
 }
 
 blockquote {
@@ -163,7 +162,7 @@ blockquote {
   font-size: 2rem;
 }
 
-@media all and (min-width: 600px) {
+@media #{ $responsive-medium } {
 
   .box-skills {
     display: grid;
@@ -214,13 +213,11 @@ background-size: 30%;
   margin: auto;
   padding: 20px;
   text-align: left;
-}
-
-.gui h2 {
+h2 {
   font-weight: 600;
   font-size: 1.313rem;
   text-align: left;
-  
+ }
 }
 
 .nota {
@@ -232,23 +229,19 @@ background-size: 30%;
   max-width:600px;
   margin: auto;
   width: 100%;
-}
-
-
-.detalhe-content img {
+img {
   max-width: 100%;
   height: auto;
   padding: 24px 0;
 }
-
-.detalhe-content div {
+div {
   margin-bottom: 50px;
 }
-
-.detalhe-content div h3 {
+div h3 {
   color: #0288FF;
   font-size: 1.5rem;
   font-weight: 600;
+}
 }
 
 .box-color {
@@ -257,9 +250,7 @@ background-size: 30%;
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
-}
-
-.box-color span {
+span {
   width: 100px;
   height: 100%;
   font-weight: bold;
@@ -270,24 +261,88 @@ background-size: 30%;
   border-radius: 15px;
   border: $text-color solid 1px;
 }
-
-span.cor1 {
+cor1 {
   background-color: #33C2B8;
   color: #FFFFFF;
 }
-
-span.cor2 {
+cor2 {
   background-color: #364042;
   color: #FFFFFF;
 }
-
-span.cor3 {
+cor3 {
   background-color: #F1FBFA;
 }
-
-span.cor4 {
+cor4 {
   background-color: #F3CF5D;
 }
+}
+
+
+ .presentation-gui {
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: #0288FF;
+  font-size: 4rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-weight: 600;
+
+  @media #{ $responsive-medium } {
+      height: 70vh;
+      font-size: 8rem;
+  }
+}
+
+.contacts-gui {
+    margin: 48px 0;
+a {
+  display: inline-block;
+  padding-bottom: 50px;
+}
+h3 {
+  font-weight: 400;
+}
+}
+
+
+.page-name {
+  justify-content: center;
+  align-items: center;
+  color: #0288FF;
+  font-size: 3rem;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-weight: 400;
+  margin-bottom: $space-medium;
+
+  @media #{ $responsive-medium } {
+      font-size: 6rem;
+  }
+
+}
+
+.animacao-txt {
+  animation: animacao-txt 0.7s;
+}
+
+@keyframes animacao-txt {
+  0% {
+  letter-spacing: -0.5em;
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  opacity: 1;
+}
+}
+
+
+
 
 
 
