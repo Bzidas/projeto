@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// Definir defaults para cada variável
+
+$font-family: Helvetica, Arial, sans-serif, !default;
+$font-size: 1rem !default;
+$font-weight: 400 !default;
+$font-weight-bold: 600 !default;
+$line-height: 1.5 !default;
+
+$text-color: #354C58 !default;
+$secondary-color: #F2F4F8 !default;
+$primary-color: #0288FF !default;
+$neutral-color: #FFFFFF !default;
+
+// Definir espaçamentos para cada variável
+$space-zero: 0px;
+$space-xsmall: 4px;
+$space-small: 12px;
+$space-medium: 20px;
+$space-xmedium: 24px;
+$space-large: 32px;
+
+// Definir intervalos para media queries
+$responsive-medium:	"( min-width: 600px )";
+
+// Import partials.
+@import
+  "guifinal/nav-geral",
+  "guifinal/base",
+  "guifinal/conteudo-geral",
+  "guifinal/footer-geral"
+  ;

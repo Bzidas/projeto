@@ -3,7 +3,7 @@
     {% for item in site.data.navegacao %}
     
 		<li>
-			<a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}class="class-teste"{% endif %}>
+			<a href="{{ item.link  | relative_url }}"  {% if item.link == page.url %}class="navigation-page"{% endif %}>
             {{ item.name }}
         </a>
 		</li>

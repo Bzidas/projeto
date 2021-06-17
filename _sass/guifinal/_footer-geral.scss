@@ -1,0 +1,48 @@
+/**
+ * Estilos para o footer
+ */
+
+ .more-about {
+   display: block;
+   width: 100%;
+   margin: auto;
+   padding: $space-medium;
+   background-color: $secondary-color;
+   text-align: center;
+   box-sizing: border-box;
+
+    h3 {
+    font-weight: $font-weight-bold;
+    font-size: 1.313rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: $space-medium;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 36px 0;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 0 $space-medium;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    li {
+    width: $space-large;
+    text-align: center;
+    font-size: 0.625rem;
+    padding: 0;
+    height: $space-large;
+    overflow: hidden;
+
+        img {
+            display: inline-block;
+            width: $space-large;
+            text-align: center;
+            margin: auto;
+        }
+    }
+ 
+}

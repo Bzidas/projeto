@@ -3,10 +3,12 @@ layout: page
 title: Contacts
 permalink: /contacts/
 ---
-<section class="contacto-content">
-    <div>
+<section class="box-content">
+    <p>Feel free to know a little bit more about me visiting my social media.</p>
+    <p>If you have any questions, just send an email telling what's up.</p>
+    <div class="contacts-gui">
     {% for meio in site.data.listacontactos %}
-        <h3>{{ meio.plataforma}}</h3>
+        <h3>{{ meio.plataforma }}</h3>
         <a href="{{ meio.endereco }}">{{ meio.endereco }}</a>
     {% endfor %}
     </div>
