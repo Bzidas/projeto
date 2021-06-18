@@ -4,8 +4,8 @@
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
+  margin: $space-zero;
+  padding: $space-zero;
 }
 
 * {
@@ -23,7 +23,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   box-sizing: border-box;
-  line-height: 1.5;
+  line-height: $line-height;
 }
 
 
@@ -39,7 +39,7 @@ main {
  * Images
  */
 img {
-  max-width: 100%;
+  max-width: $space-total;
   vertical-align: middle;
 }
 
@@ -56,14 +56,14 @@ figure > img {
  * Lists
  */
 ul, ol {
-  margin-left: 0;
+  margin-left: $space-zero;
   list-style-type: none;
 }
 
 li {
   > ul,
   > ol {
-    margin-bottom: 0;
+    margin-bottom: $space-zero;
   }
 }
 
@@ -72,7 +72,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: $font-weight-bold;
 }
 
 
@@ -94,44 +94,53 @@ a {
  
 }
 
+@mixin titulo {
+  color: $primary-color;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
 .container {
   ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 100px 0;
+    margin: $space-xlarge $space-zero;
   }
 
   img {
-    max-width: 100%;
+    max-width: $space-total;
     height: auto;
-    padding: 24px 0;
+    padding: $space-xmedium $space-zero;
   }
 
   li {
-    margin-bottom: 40px;
+    margin-bottom: $space-large;
   }
 
   a {
     display: inline-block;
-    padding: 12px;
+    padding: $space-small;
     background: $primary-color;
-    color: white;
+    color: $neutral-color;
     text-decoration: none;
+  }
+  h2 {
+    @include titulo;
+    padding: $space-xmedium $space-zero;
   }
 
   h3 {
-    color: $primary-color;
+    @include titulo;
     font-size: 90%;
-    padding: 24px 0;
+    padding: $space-xmedium $space-zero;
   }
 }
 
 
 .contacto-content a {
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: $space-large;
 }
 
 .box-skills {
@@ -142,9 +151,9 @@ a {
   span {
   font-weight: bold;
   display: flex;
-  padding: 12px;
-  margin: 4px;
-  border-radius: 12px;
+  padding: $space-small;
+  margin: $space-xsmall;
+  border-radius: $space-small;
   justify-content: center;
   align-items: center;
   border: $primary-color solid 1px;
@@ -152,13 +161,13 @@ a {
 }
 
 blockquote {
-  margin: 48px auto;
+  @include titulo;
+  margin: $space-large auto;
   padding-left: 200px;
-  background-size: 10% 10%;
   background: transparent url(/projeto/assets/img/apostrofo.png) no-repeat;
   transform: rotateZ(-8deg);
-  background-position: 0px top;
-  border-left: 0px;
+  background-position: $space-zero top;
+  border-left: $space-zero;
   font-size: 2rem;
 }
 
@@ -174,7 +183,7 @@ blockquote {
   
 
   .container li {
-    margin-bottom: 40px;
+    margin-bottom: $space-large;
     width: 30%;
   }
 
@@ -186,17 +195,17 @@ blockquote {
     font-size: 4rem;
   }
   div {
-    margin-bottom: 48px;
+    margin-bottom: $space-large;
   }
   img {
-    padding: 40px 0px;
+    padding: $space-large $space-zero;
   }
   a {
-    padding: 0px 0px 40px;
+    padding: $space-zero $space-zero $space-large;
     display: inline-block;
   }
   p:last-of-type{
-    padding: 0px 0px 40px;
+    padding: $space-zero $space-zero $space-large;
   }
 }
 
@@ -209,12 +218,12 @@ background-size: 30%;
 
 
 .gui {
-  width: 100%;
+  width: $space-total;
   margin: auto;
-  padding: 20px;
+  padding: $space-medium;
   text-align: left;
 h2 {
-  font-weight: 600;
+  font-weight: $font-weight-bold;
   font-size: 1.313rem;
   text-align: left;
  }
@@ -222,25 +231,25 @@ h2 {
 
 .nota {
   font-size: 90%;
-  margin-top: 36px;
+  margin-top: $space-large;
 }
 
 .detalhe-content {
   max-width:600px;
   margin: auto;
-  width: 100%;
+  width: $space-total;
 img {
-  max-width: 100%;
+  max-width: $space-total;
   height: auto;
-  padding: 24px 0;
+  padding: $space-xmedium $space-zero;
 }
 div {
-  margin-bottom: 50px;
+  margin-bottom: $space-large;
 }
 div h3 {
-  color: #0288FF;
-  font-size: 1.5rem;
-  font-weight: 600;
+  @include titulo;
+  font-size: 1.8rem;
+  margin-bottom: $space-medium;
 }
 }
 
@@ -249,45 +258,44 @@ div h3 {
   grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: $space-medium $space-zero;
 span {
-  width: 100px;
-  height: 100%;
+  width: $space-xlarge;
+  height: $space-total;
   font-weight: bold;
-  padding: 20px;
+  padding: $space-medium;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: $space-small;
   border: $text-color solid 1px;
 }
-cor1 {
+.cor1 {
   background-color: #33C2B8;
-  color: #FFFFFF;
+  color: $neutral-color;
 }
-cor2 {
+.cor2 {
   background-color: #364042;
-  color: #FFFFFF;
+  color: $neutral-color;
 }
-cor3 {
+.cor3 {
   background-color: #F1FBFA;
 }
-cor4 {
+.cor4 {
   background-color: #F3CF5D;
 }
 }
 
 
  .presentation-gui {
+  @include titulo;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  color: #0288FF;
-  font-size: 4rem;
+  font-size: 6rem;
   display: flex;
-  width: 100%;
+  width: $space-total;
   margin: auto;
-  font-weight: 600;
 
   @media #{ $responsive-medium } {
       height: 70vh;
@@ -296,30 +304,30 @@ cor4 {
 }
 
 .contacts-gui {
-    margin: 48px 0;
+    margin: $space-large $space-zero;
 a {
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: $space-large;
 }
 h3 {
-  font-weight: 400;
+  font-weight: $font-weight;
 }
 }
 
 
 .page-name {
+  @include titulo;
   justify-content: center;
   align-items: center;
-  color: #0288FF;
   font-size: 3rem;
   display: flex;
-  width: 100%;
+  width: $space-total;
   margin: auto;
-  font-weight: 400;
   margin-bottom: $space-medium;
+ 
 
   @media #{ $responsive-medium } {
-      font-size: 6rem;
+    font-size: 6rem;
   }
 
 }
