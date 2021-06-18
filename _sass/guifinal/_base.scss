@@ -82,18 +82,19 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $primary-color;
   text-decoration: none;
-
   &:visited {
     color: $primary-color;
   }
-
   &:hover {
     color: $text-color;
     text-decoration: underline;
   }
- 
 }
 
+
+/**
+ * Formatação UI
+ */
 @mixin titulo {
   color: $primary-color;
   font-family: Geneva, Verdana, sans-serif;
@@ -107,17 +108,14 @@ a {
     justify-content: space-around;
     margin: $space-xlarge $space-zero;
   }
-
   img {
     max-width: $space-total;
     height: auto;
     padding: $space-xmedium $space-zero;
   }
-
   li {
     margin-bottom: $space-large;
   }
-
   a {
     display: inline-block;
     padding: $space-small;
@@ -129,14 +127,12 @@ a {
     @include titulo;
     padding: $space-xmedium $space-zero;
   }
-
   h3 {
     @include titulo;
     font-size: 90%;
     padding: $space-xmedium $space-zero;
   }
 }
-
 
 .contacto-content a {
   display: inline-block;
@@ -149,14 +145,14 @@ a {
   justify-content: center;
   align-items: center;
   span {
-  font-weight: bold;
-  display: flex;
-  padding: $space-small;
-  margin: $space-xsmall;
-  border-radius: $space-small;
-  justify-content: center;
-  align-items: center;
-  border: $primary-color solid 1px;
+    font-weight: bold;
+    display: flex;
+    padding: $space-small;
+    margin: $space-xsmall;
+    border-radius: $space-small;
+    justify-content: center;
+    align-items: center;
+    border: $primary-color solid 1px;
   }
 }
 
@@ -171,62 +167,16 @@ blockquote {
   font-size: 2rem;
 }
 
-@media #{ $responsive-medium } {
-
-  .box-skills {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-
-  .container li {
-    margin-bottom: $space-large;
-    width: 30%;
-  }
-
-.box-content {
-  width:600px;
-  margin:auto;
-  h1 {
-    color: $primary-color;
-    font-size: 4rem;
-  }
-  div {
-    margin-bottom: $space-large;
-  }
-  img {
-    padding: $space-large $space-zero;
-  }
-  a {
-    padding: $space-zero $space-zero $space-large;
-    display: inline-block;
-  }
-  p:last-of-type{
-    padding: $space-zero $space-zero $space-large;
-  }
-}
-
-blockquote {
-font-size: 2.4rem;
-background-size: 30%;
-}
-
-}
-
-
 .gui {
   width: $space-total;
   margin: auto;
   padding: $space-medium;
   text-align: left;
-h2 {
-  font-weight: $font-weight-bold;
-  font-size: 1.313rem;
-  text-align: left;
- }
+  h2 {
+    font-weight: $font-weight-bold;
+    font-size: 1.313rem;
+    text-align: left;
+  }
 }
 
 .nota {
@@ -234,60 +184,110 @@ h2 {
   margin-top: $space-large;
 }
 
+/**
+ * Blocos para ecras com mais de 600px
+ */
+@media #{ $responsive-medium } {
+  .box-skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container li {
+    margin-bottom: $space-large;
+    width: 30%;
+  }
+  .box-content {
+    width:600px;
+    margin:auto;
+    h1 {
+      color: $primary-color;
+      font-size: 4rem;
+    }
+    div {
+      margin-bottom: $space-large;
+    }
+    img {
+      padding: $space-large $space-zero;
+    }
+    a {
+      padding: $space-zero $space-zero $space-large;
+      display: inline-block;
+    }
+    p:last-of-type {
+      padding: $space-zero $space-zero $space-large;
+    }
+  }
+  blockquote {
+    font-size: 2.4rem;
+    background-size: 30%;
+  }
+}
+
+/**
+ * Formatação das páginas de detalhe do portfolio
+ */
 .detalhe-content {
   max-width:600px;
   margin: auto;
   width: $space-total;
-img {
-  max-width: $space-total;
-  height: auto;
-  padding: $space-xmedium $space-zero;
-}
-div {
-  margin-bottom: $space-large;
-}
-div h3 {
-  @include titulo;
-  font-size: 1.8rem;
-  margin-bottom: $space-medium;
-}
+  img {
+    max-width: $space-total;
+    height: auto;
+    padding: $space-xmedium $space-zero;
+  }
+  div {
+    margin-bottom: $space-large;
+  }
+  div h3 {
+    @include titulo;
+    font-size: 1.8rem;
+    margin-bottom: $space-medium;
+  }
 }
 
+/**
+ * Definição das cores do projeto pathfinder
+ */
 .box-color {
   display: grid;
   grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: space-around;
   padding: $space-medium $space-zero;
-span {
-  width: $space-xlarge;
-  height: $space-total;
-  font-weight: bold;
-  padding: $space-medium;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: $space-small;
-  border: $text-color solid 1px;
-}
-.cor1 {
-  background-color: #33C2B8;
-  color: $neutral-color;
-}
-.cor2 {
-  background-color: #364042;
-  color: $neutral-color;
-}
-.cor3 {
-  background-color: #F1FBFA;
-}
-.cor4 {
-  background-color: #F3CF5D;
-}
+  span {
+    width: $space-xlarge;
+    height: $space-total;
+    font-weight: bold;
+    padding: $space-medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $space-small;
+    border: $text-color solid 1px;
+  }
+  .cor1 {
+    background-color: #33C2B8;
+    color: $neutral-color;
+  }
+  .cor2 {
+    background-color: #364042;
+    color: $neutral-color;
+  }
+  .cor3 {
+    background-color: #F1FBFA;
+  }
+  .cor4 {
+    background-color: #F3CF5D;
+  }
 }
 
-
- .presentation-gui {
+/**
+ * Formatação da homepage
+ */
+.presentation-gui {
   @include titulo;
   justify-content: center;
   align-items: center;
@@ -296,25 +296,29 @@ span {
   display: flex;
   width: $space-total;
   margin: auto;
-
   @media #{ $responsive-medium } {
-      height: 70vh;
-      font-size: 8rem;
+    height: 70vh;
+    font-size: 8rem;
   }
 }
 
+/**
+ * Formatação dos contactos
+ */
 .contacts-gui {
-    margin: $space-large $space-zero;
-a {
-  display: inline-block;
-  padding-bottom: $space-large;
-}
-h3 {
-  font-weight: $font-weight;
-}
+  margin: $space-large $space-zero;
+  a {
+    display: inline-block;
+    padding-bottom: $space-large;
+  }
+  h3 {
+    font-weight: $font-weight;
+  }
 }
 
-
+/**
+ * Título de páginas
+ */
 .page-name {
   @include titulo;
   justify-content: center;
@@ -324,29 +328,30 @@ h3 {
   width: $space-total;
   margin: auto;
   margin-bottom: $space-medium;
- 
-
   @media #{ $responsive-medium } {
     font-size: 6rem;
   }
-
 }
 
+
+/**
+ * Animação inicial
+ */
 .animacao-txt {
   animation: animacao-txt 0.7s;
 }
 
 @keyframes animacao-txt {
   0% {
-  letter-spacing: -0.5em;
-  opacity: 0;
-}
-40% {
-  opacity: 0.6;
-}
-100% {
-  opacity: 1;
-}
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
